@@ -1,0 +1,45 @@
+Problem 1: 
+-determine. Average of a value over some trailing number of days 
+-average stock price for every 7 days 
+
+Return a list of trailing averages as a string 
+
+Return string 
+Rounded to two places after the decimal 
+print(round(10))
+
+AVERAGE
+def Average(lst): 
+    return sum(lst) / len(lst) 
+
+  
+# Driver Code 
+lst = [15, 9, 55, 41, 35, 20, 62, 49] 
+average = Average(lst) 
+  
+# Printing average of the list 
+
+
+
+
+ROUNDING
+1. print(round(2.665, 2))
+2. print(round(2.675, 2))
+round(number, ndigits)
+
+STRING
+To convert object to string 
+str(a)
+
+i = 5
+>>> print "Hello, world the number is " + i
+TypeError: must be str, not int
+>>> s = str(i)
+>>> print "Hello, world the number is " + s
+Hello, world the number is 5
+
+
+
+
+Returns a string array of average of every 7 days 
+
