@@ -1,0 +1,520 @@
+QRG_Source_CSS.css
+
+body {
+font-family: 'Quicksand', sans-serif;
+font-weight: 300;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 25px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fddd3c; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: 500;
+}
+
+.fixedbutton {
+position: fixed;
+bottom: 560px;
+right: 1000px; 
+}
+
+h1 {
+color: #000000;
+font-family: 'Arial','Helvetica', sans-serif;
+font-size: 60px;
+line-height: 76px;
+margin: 0;
+position: relative;
+text-align: left;
+top: 20%;
+}
+
+.top-navi-text{
+font-size: 20px;    
+overflow: hidden;
+cursor:pointer
+}
+
+h2 {
+color: #E1E1E1;
+font-family: 'Raleway', sans-serif;
+font-size: 28px;
+font-weight: 500;
+text-align: left;
+text-transform: uppercase;
+}
+
+
+p {
+color: #ffffff;
+line-height: 32px;
+font-family: 'Quicksand', sans-serif;
+font-weight: 300;
+font-size: 50px;
+}
+
+p1 {
+color: #000000;
+line-height: 32px;
+font-family: 'Quicksand', sans-serif;
+font-weight: 300;
+font-size: 50px;
+}
+
+p2 {
+color: #000000;
+line-height: 32px;
+font-family: 'Quicksand', sans-serif;
+font-weight: 500;
+font-size: 50px;
+}
+
+@keyframes fade-in-top {
+from {
+opacity: 0;
+transform: translateY(15px);
+}
+to {
+opacity: 1;
+transform: translateY(0px);
+}
+}
+
+.footer {
+position: fixed;
+right: 0;
+bottom: 0;
+height: 28px;
+left: 0;
+z-index: 1000; 
+padding: 1rem;
+background-color: #030303;
+text-align: center;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 3s;
+}
+
+@media screen and (max-width: 1024px) {
+.footer {
+height: 60px;
+font-size: 55px;
+text-align: center;
+z-index: 1000; 
+padding: 1rem;
+}
+  
+}
+
+
+/* The progress container (grey background) */
+.progress-container {
+z-index: 1000;
+width: 100%;
+height: 8px;
+background: black;
+border-radius: 25px; 
+border-width: 2px;
+border-style: solid;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+z-index: 1000;
+height: 8px;
+background: white;
+width: 0%;
+}
+
+@media screen and (max-width: 450px) {
+         .progress-container{
+         display: none;
+         }
+         
+         .progress-bar{
+         display: none;
+         }
+        }
+        
+        @media screen and (max-width: 1024px) {
+         .progress-container{
+         display: none;
+         }
+         
+         .progress-bar{
+         display: none;
+         }
+        }
+
+a {
+color: #4286f4;
+font-family: 'Raleway', sans-serif;
+font-size: 13px;
+font-weight: 900;
+text-align: left;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 2px;
+}
+
+/* Place the navbar */
+.navbar {
+background-color: #ffffff;
+overflow: hidden;
+float: left;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 201;
+border-radius: 25px; 
+border-width: 1px;
+border-color: black; 
+border-style: groove;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+float: left;
+display: block;
+color: #000000;
+text-align: center;
+padding: 14px 26px;
+text-decoration: none;
+transition: 0.3s;
+height: auto;
+font-weight: 20;
+font-size: 11px;
+}
+
+img.QRG_Logo{
+width:90px; 
+height:30px;
+}
+
+img.arrow_boi{
+transition: 0.5s;
+height:50px; 
+width:50px;
+}
+
+@media screen and (max-width: 1024px) {
+.navbar a{
+font-size: 35px;
+font-weight: 1;
+}
+img.QRG_Logo{
+width:140px; 
+height:42px;
+display: block;
+}
+img.arrow_boi{
+height:70px; 
+width:70px;
+}
+.top-navi-text{
+font-size: 32px; 
+font-weight: 350;
+overflow: hidden;
+}
+}
+
+@media screen and (max-width: 450px) {
+.navbar a{
+display: inline-block;
+font-size: 30px;
+font-weight: 100;
+color: black;
+border-width: 1px;
+border-radius: 25px;
+border-color: black; 
+border-style: dotted;   
+padding: 45px;
+background-color: #fddd3c;
+box-shadow: 40px 8px 2px rgba(0,0,0,0.2);
+}
+.navbar {
+background-color: transparent;
+border-style: none;
+padding: 20px;
+left:0;
+width:320px;
+}
+img.arrow_boi{
+display:none;
+}
+.top-navi-text{
+font-size: 40px; 
+font-weight: 500;
+overflow: hidden;
+}
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+background-color: #ddd;
+height: auto;
+color: black;
+}
+
+/* Add a color to the active/current link */
+a.active {
+background-color: #fddd3c;
+color: white;
+}
+
+.active{
+visibility: visible;
+}
+
+@media screen and (max-width: 450px) {
+.active{
+visibility: hidden;
+}
+
+}
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar2 {
+background-color: white;
+position: fixed;
+bottom: 0px;
+height: 100px;
+width: auto;
+margin-left: 47%;
+opacity: 0;
+animation: fade-in-top ease 2s forwards;
+animation-delay: 7s;
+float: left;
+display: flex;
+z-index: 201;
+border-radius: 25px; 
+border-width: 1px;
+border-color: black; 
+overflow: hidden;
+border-style: groove;
+}
+
+img.navbar2_icons{
+height: 25px;
+width: 25px;
+}
+
+@media screen and (max-width: 1024px){
+.navbar2 {
+height: 180px;
+border-radius: 80px; 
+border-width: 1px;
+padding: 30px;
+margin-left: 38%;
+}
+img.navbar2_icons{
+height: 105px;
+width: 105px;
+}
+}
+
+@media screen and (max-width: 450px){
+.navbar2 {
+height: 180px;
+border-radius: 80px; 
+border-width: 1px;
+padding: 30px;
+margin-left: 30%;
+}
+img.navbar2_icons{
+height: 105px;
+width: 105px;
+}
+}
+
+/* Style the links inside the navigation bar */
+.navbar2 a {
+float: center;
+display: flex;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.navbar2 a:hover {
+background-color: #ddd; 
+height: 100%;
+color: black;
+}
+
+/* The side navigation menu */
+.navbar3 {
+height: 100%; /* 100% Full-height */
+width: 0px; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 2020; /* Stay on top */
+top: 0; /* Stay at the top */
+background-color: #FFFFFF; /* White */
+overflow-x: hidden;
+overflow-y: scroll;
+display: table;
+right: 0;
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.navbar3_container{
+height: 100%; /* 100% Full-height */
+width: 100%; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 2020; /* Stay on top */
+top: 0; /* Stay at the top */
+background-color: #FFFFFF; /* White */
+overflow-x: hidden;
+overflow-y: scroll;  
+display: table-column;
+}
+
+.videoframes{ 
+display:none;
+}
+
+.ogvideoframe{
+display: block;
+}
+
+@media screen and (max-width: 1024px) {
+.videoframes{
+display: block;
+}
+.ogvideoframe{
+display: none;
+}
+}
+
+
+.sidediv_1_header{
+position: fixed;
+background-position: center;
+background-image: url('https://i.imgur.com/b8upl7H.gif');
+top: 0px;
+height: 300px;
+z-index: 98;
+padding: 0;
+text-align: center;
+background-color: black;
+width: 500px;
+padding: 14px 70px;
+}
+.sidediv_1_header_layer{
+position: fixed;
+background-position: center;
+background-image: url('https://i.imgur.com/zEeni0U.gif');
+top: 0px;
+height: 300px;
+z-index: 100;
+padding: 0;
+text-align: center;
+position: absolute;
+width: 500px;
+padding: 14px 70px;
+}
+
+.sidediv_1 {
+position: fixed;
+background-position: center;
+top: 290px;
+height: auto;
+z-index: 999;
+padding: 0;
+text-align: center;
+background-color: #fddd3c;
+width: 500px;
+padding: 14px 70px;
+border-style: dotted;
+border-radius: 25px;
+border-color: black;
+border-width: 1px;
+}
+.sidediv_2 {
+position: fixed;
+background-position: center;
+top: 380px;
+height: auto;
+z-index: 99;
+padding: 0;
+text-align: center;
+background-color: white;
+width: 500px;
+padding: 30px 25px;
+}
+.sidediv_border_out {
+position: fixed;
+background-position: center;
+top: 0px;
+height: 100%;
+z-index: 96;
+padding: 0;
+text-align: center;
+background-color: #fddd3c;
+width: 40px;
+margin-left: -20px;
+padding: 14px 20px;
+}
+.sidediv_border_in {
+position: fixed;
+background-position: center;
+top: 0px;
+height: 100%;
+z-index: 96;
+padding: 0;
+text-align: center;
+background-color: black;
+width: 40px;
+margin-left: -10px;
+padding: 14px 20px;
+}
+
+.sidediv_border_exitbutton{
+position: fixed;
+cursor:pointer;
+background-position: center;
+top: 500px;
+height: 100px;
+z-index: 96;
+padding: 0;
+border-color: black;
+border-style: solid;
+border-radius: 25px;
+text-align: left;
+background-color: #fddd3c;
+width: 60px;
+margin-left: -70px;
+padding: 14px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+.sidediv_border_exitbutton{
+height: 400px;
+margin-left: -100px;
+width: 250px;
+}
+}

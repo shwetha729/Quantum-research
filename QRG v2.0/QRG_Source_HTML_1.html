@@ -1,0 +1,1013 @@
+<!DOCTYPE html> 
+<html style = "scroll-behavior: smooth;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> The Quantum Research Group </title>	 
+
+<body>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="QRG_Source_CSS.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="QRG_Source_CSS.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<style>
+body {
+background-color: black;
+background-repeat: no-repeat;
+position: relative;
+height: 3200px;
+width: 100%;
+display: inline-grid;
+}
+
+.div_1 {
+background-color: transparent;
+background-image: url('https://i.imgur.com/KXDrKhX.jpg');
+background-position: right;
+background-repeat: no-repeat;
+position: relative;
+top: 0px;
+height: 800px;
+width: 100%;
+z-index: 1;
+}
+.div_1_2 {
+top:-30px;
+background-color: transparent;
+background-image: url('https://i.imgur.com/vag1Zkc.jpg');
+background-position: left;
+background-repeat: no-repeat;
+position: relative;
+top: -830px;
+height: 800px;
+width: 100%;
+z-index: 0;
+}
+
+.div_1_text_box {
+top: -1500px;
+background-color: transparent;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+height: auto;
+text-align: left;
+z-index: 100;
+width: 800px;
+margin: auto;
+flex-direction: column;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 0.5s;
+}
+
+.text-box-text1{
+font-size: 35px; 
+background-color: white;
+border-radius: 25px;
+border-color: black; 
+border-style: groove;  
+color: black;
+font-weight: 500;
+}
+.text-box-text2{
+font-size: 40px;  
+color: white;
+font-weight: 500;
+}
+.text-box-text3{
+font-size: 25px; 
+color: white;
+font-weight: 500;
+}
+.text-box-text4{
+font-size: 20px; 
+color: white;
+font-weight: 500;
+}
+    
+@media screen and (max-width: 450px) {
+.div_1_text_box {
+top: -1500px;
+background-color: transparent;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+height: auto;
+text-align: left;
+z-index: 100;
+width: 1100px;
+margin: auto;
+flex-direction: column;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 0.5s;
+}
+.div_1_2 {
+z-index: 99;
+}
+.text-box-text1{
+font-size:45px;  
+}
+.text-box-text2{
+font-size: 55px; 
+}
+.text-box-text3{
+font-size: 40px; 
+}
+.text-box-text4{
+font-size: 35px; 
+}
+}
+
+.fixed_button{
+position: fixed;
+top: 50%;
+margin-left: -80px;
+z-index: 999;
+padding: 0;
+text-align: center;
+opacity: 1;
+animation: fade-out-right ease 2s forwards;
+animation-delay: 15s;
+}
+
+img.doggo{
+height: 200px;
+width: 350px;    
+}
+
+@media screen and (max-width: 1024px) {
+.div_1_text_box {
+background-color: black;
+border-radius: 25px;
+border-width: 2px;
+border-color: #fddd3c; 
+border-style: outset;
+}
+img.doggo{
+    height: 500px; 
+    width : 800px;      
+    }
+.div_1_2 {
+z-index: 99;
+}
+}
+
+
+@keyframes fade-in-right {
+from {
+opacity: 0;
+transform: translateX(-15px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes fade-out-right {
+from {
+opacity: 1;
+transform: translateX(0);
+}
+to {
+opacity: 0;
+transform: translateX(15px);
+}
+}
+</style>
+
+<!-- opens the sidenav -->
+<div class = "fixed_button" id ="click_meh">
+<span onclick="decide(); document.getElementById('corgi').height='0px';" >
+<img id = "corgi" src="https://i.imgur.com/8UFwyjO.gif" class= "doggo" style = "cursor:pointer;">
+</span>
+</div>
+
+<section>
+<div class = "div_1">
+</div>
+<div class = "div_1_2">
+</div>   
+<div class = "div_1_text_box">
+<h1 class = "text-box-text2"> Welcome to The Quantum Research Group</h1><br>
+    <br><p1 class = "text-box-text1">At The New York Institute of Technology</p1><br>
+<br><br><br><p1 class = "text-box-text3">Originating from the Innovation Labs at New York Institute of Technology, a group of 4 qc-interested engineering & comp sci students sit down to found NYIT's very first quantum computing club in 2019.</p1><br>
+<br><p1 class = "text-box-text3">Desiring to expand their knowledge beyond the institution, The Quantum Research Group is a collective of students, professors, researchers, and industry experts across all disciplines in NYIT and New York City using an interdisciplinary lens to tackle the future's biggest and most exciting problems. This isn't just a computer science/engineering group, this is a group that needs everyone.
+</p1><br>
+<br><p1 class = "text-box-text4">And, indeed, everyone will need quantum computers :)</p1><br>
+<br><img src = "https://i.imgur.com/WGJq8MP.png" alt = "QRG Logo" style="max-width:100%;height:auto;">
+</div> 
+</section>
+
+<style>
+.div_2 {
+background-color: #1a1c1c;
+background-position: center;
+width: 100%;
+background-repeat: no-repeat;
+border-color: white;
+border-style: dotted;
+border-width: 1px;
+position: relative;
+text-align: center;
+top: -1450px;
+height: 400px;
+z-index: 1;
+width: 100%;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 3s;
+}
+.div_2_inside {
+background-color: #fddd3c;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 25px;
+border-width: 20px; 
+border-color: white; 
+border-style: inset;
+position: relative;
+text-align: center;
+top: -1803px;
+z-index: 1;
+height: 160px;
+width: 100%;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 3s;
+}
+</style>
+
+<div class = div_2 id = "contact_section">
+<p1 style="font-size: 30px; color: white; font-weight: 500"> Who's Our Mascot? : </p1><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br><br> <p1 style="font-size: 30px; color: white; font-weight: 500">  A corgie named Queen - a gender non-binary dog.</p1><br>
+</div>
+<div class = div_2_inside><a href = "https://youtu.be/Lt_AisElt8s?t=454" target="_blank"><img src = "https://i.imgur.com/SwIJ4wd.png" alt = "QRG Logo" width ="200" height ="200" style="cursor:pointer; background-color: white; border-radius: 25px;border-width: 20px; border-color: white; border-style: groove;" onclick ="play()";></a><br></div>        
+
+<style>
+.div_3 {
+background-color: gray;
+background-image: url('https://i.imgur.com/Idoqc4v.gif');
+background-position: center;
+display: flex;
+background-repeat: repeat;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+top: -1610px;  
+position: relative;
+height: 700px;
+width: 100%;
+text-align: center;
+}
+.div_3_container{
+ object-position: center;
+ margin:auto;
+ display: flex;
+ width: 1800px;
+ 
+}
+.card-front {
+background-color: white;
+color: black;
+text-align: center;  
+border-radius: 25px;
+border-width: 1px;
+border-color: white; 
+}
+
+
+.card {
+background-color: white;
+width: 280px;
+height: 500px;
+perspective: 1000px;
+margin: auto;
+text-align: center;
+border-radius: 25px;
+border-width: 10px;
+border-color: white; 
+border-style: outset;
+}
+
+.card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover .card-inner {
+transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+margin: auto;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.card-back {
+background-color: white;
+color: white;
+transform: rotateY(180deg);
+border-radius: 25px;
+border-width: 1px;
+border-color: white; 
+}
+
+button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+button:hover, a:hover {
+opacity: 0.7;
+}
+.e-board_header{
+background-color: black;
+background-position: center;
+background-repeat: repeat;
+border-color: white;
+border-style: dotted;
+border-width: 1px;
+top: -2300px;  
+position: relative;
+height: auto;
+width: auto;
+text-align: center; 
+}
+</style>
+
+<div class = "div_3">
+<div class = "div_3_container">
+<div class = "card">
+<div class ="card-inner">
+<div class="card-front">
+<img src="https://i.imgur.com/q0hAyzw.jpg" alt="JC" style="width: auto; height: 240px; border-radius: 50%; border-style: dotted; border-color: black; border-width: 2px;"><br>
+<br><p1 style="font-size: 32px; color: black; font-weight: 800">Justin Cook</p1><br>
+<br><p1 style="font-size: 29px; color: black; font-weight: 500">Secretary & Senator</p1><br>
+<br><p1 style="font-size: 17px; color: white; font-weight: 500; background-color:black; border-radius: 25px; border-width: 1px; border-color: black; border-style: solid;"> B.S </p1>
+<p1 style="font-size: 20px; color: black; font-weight: 800"> E.C.E '22</p1>
+<p style="font-size: 30px; color: white; font-weight: 500"><button>Contact</button></p>
+</div>
+<div class = "card-back">
+<br><br>
+<br><br>
+<br><br>
+<a href="https://www.linkedin.com/in/justin-cook-53a904140?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bknkt6USzTxGNA0eE7auBPg%3D%3D""#LinkedIn"><img src="https://i.imgur.com/mVFSp9P.png" height="200px" width= "200px"  title="Justin's LinkedIn"></a>
+</div>
+</div>
+</div>  
+
+<div class = "card">
+<div class ="card-inner">
+<div class="card-front">
+<img src="https://i.imgur.com/6xT1692.jpg" alt="EC" style="width: auto; height: 240px; border-radius: 50%; border-style: dotted; border-color: black; border-width: 2px;"><br>
+<br><p1 style="font-size: 32px; color: black; font-weight: 800">Elis Cucka</p1><br>
+<br><p1 style="font-size: 29px; color: black; font-weight: 500">Treasurer</p1><br>
+<br><p1 style="font-size: 17px; color: white; font-weight: 500; background-color:black; border-radius: 25px; border-width: 1px; border-color: black; border-style: solid;"> B.S </p1>
+<p1 style="font-size: 20px; color: black; font-weight: 800"> E.C.E '21</p1>
+<p style="font-size: 30px; color: white; font-weight: 500"><button>Contact</button></p>
+</div>
+<div class = "card-back">
+<br><br>
+<br><br>
+<br><br>
+<a href="https://www.linkedin.com/in/eliscucka?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FLwVJndASyy5pZTghRGjEg%3D%3D""#LinkedIn"><img src="https://i.imgur.com/mVFSp9P.png" height="200px" width= "200px"  title="Elis' LinkedIn"></a>
+</div>
+</div>
+</div>
+<div class = "card">
+<div class ="card-inner">
+<div class="card-front">
+<img src="https://i.imgur.com/eMcEEmE.jpg" alt="MS" style="width: auto; height: 240px; border-radius: 50%; border-style: dotted; border-color: black; border-width: 2px;"><br>
+<br><p1 style="font-size: 32px; color: black; font-weight: 800">Mareme Sall</p1><br>
+<br><p1 style="font-size: 29px; color: black; font-weight: 500">Vice President</p1><br>
+<br><p1 style="font-size: 17px; color: white; font-weight: 500; background-color:black; border-radius: 25px; border-width: 1px; border-color: black; border-style: solid;"> B.S </p1>
+<p1 style="font-size: 20px; color: black; font-weight: 800"> E.C.E.T '21</p1>
+<p style="font-size: 30px; color: white; font-weight: 500"><button>Contact</button></p>
+</div>
+<div class = "card-back">
+<br><br>
+<br><br>
+<br><br>
+<a href="https://www.linkedin.com/in/mareme-sall-32458a183?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Ba2TNop1xQSyzFbVfC%2Bx%2BDA%3D%3D""#LinkedIn"><img src="https://i.imgur.com/mVFSp9P.png" height="200px" width= "200px"  title="Mareme's LinkedIn"></a>
+</div>
+</div>
+</div>
+
+<div class = "card">
+<div class ="card-inner">
+<div class="card-front">
+<img src="https://i.imgur.com/YF83d6J.jpg" alt="SJ" style="width: auto; height: 240px; border-radius: 50%; border-style: dotted; border-color: black; border-width: 2px;"><br>
+<br><p1 style="font-size: 32px; color: black; font-weight: 800">Shwetha Jayaraj</p1><br>
+<br><p1 style="font-size: 29px; color: black; font-weight: 500">President</p1><br>
+<br><p1 style="font-size: 17px; color: white; font-weight: 500; background-color:black; border-radius: 25px; border-width: 1px; border-color: black; border-style: solid;"> B.S/M.S </p1>
+<p1 style="font-size: 20px; color: black; font-weight: 800"> Computer Science '20</p1>
+<p style="font-size: 30px; color: white; font-weight: 500"><button>Contact</button></p>
+</div>
+<div class = "card-back">
+<br><br>
+<br><br>
+<br><br>
+<a href="https://www.linkedin.com/in/shwetha-jayaraj-a2945a9b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG%2BytDVi4SG%2B0o6dKx8P4IQ%3D%3D""#LinkedIn"><img src="https://i.imgur.com/mVFSp9P.png" height="200px" width= "200px"  title="Shwetha's LinkedIn"></a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class = e-board_header>
+<p1 style="font-size: 40px; color: white; font-weight: 500;">Executive Board Members</p1>
+</div>
+
+<style>
+.div_4 {
+background-color: #ffffff;
+background-position: center;
+background-repeat: no-repeat;
+text-align: center;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+top: -1650px;  
+position: relative;
+height: auto;
+width: 100%;
+}
+    .qp-text-box{
+    font-size: 20px; 
+    color: black; 
+    font-weight: 300;  
+        
+    }
+    .qp-text-box1{
+     font-size: 20px; 
+     color: black; 
+     font-weight: 500;
+        
+    }
+    .qp-text-box2{
+     font-size: 20px; 
+     color: black;
+     font-weight: 600;   
+    }
+    .qp-text-box3{
+     font-size: 21px; 
+        color: black;
+        font-weight: 600;   
+    }
+    .qp-text-box4{
+        font-size: 18px; 
+        color: black;
+        font-weight: 600;   
+    }
+    .qp-text-box5{
+     font-size: 15px; 
+        color: black; 
+        font-weight: 600;
+    }
+    
+    img.qp-text-box6{
+     height:20px;  
+    }
+    
+    .QC-main-text{
+     text-align: center;
+        width:400px; 
+        height: 400px; 
+        position: relative;
+        margin:auto;    
+    }
+    
+    .QC-Main-Sub{
+     text-align: left; 
+        width:280px; 
+        height: 200px; 
+        position: relative;
+        margin:auto;   
+    }
+    
+@media screen and (max-width: 450px) {
+    .qp-text-box{
+    font-size: 40px; 
+    color: black; 
+    font-weight: 500;  
+        
+    }
+    .qp-text-box1{
+     font-size: 35px; 
+     color: black; 
+     font-weight: 500;
+        
+    }
+    .qp-text-box2{
+     font-size: 35px; 
+     color: black;
+     font-weight: 600;   
+    }
+    .qp-text-box3{
+     font-size: 39px; 
+        color: black;
+        font-weight: 600;   
+    }
+    .qp-text-box4{
+        font-size: 37px; 
+        color: black;
+        font-weight: 600;   
+    }
+    .qp-text-box5{
+     font-size: 35px; 
+        color: black; 
+        font-weight: 600;
+    }
+    
+    img.qp-text-box6{
+     height:40px;  
+    }
+    .QC-main-text{
+     text-align: center;
+        width:700px; 
+        height: 400px; 
+        position: relative;
+        margin:auto;    
+    }
+    
+    .QC-Main-Sub{
+     text-align: left; 
+        width:500px; 
+        height:200px; 
+        position: relative;
+        margin:auto;   
+    }
+    }
+    
+</style>
+
+<div class = div_4>
+<br><br>
+<img src ="https://i.imgur.com/HATH0jB.png" style="height:80px";><p1 style = "font-size: 80px; color: black; font-weight: 500;">Quantum Papers</p1><br><br><br><br>
+<p1 class = "qp-text-box">By Shwetha Jayaraj </p1><br><br>
+<img src ="https://i.imgur.com/jZvA1AK.gif" style ="border-radius:25px; border-width: 1px; border-style:solid; border-color:black;">
+<br><br><p1 class = "qp-text-box1"> | "We are in the universe and the universe is in us." - Neil Degrasse Tyson </p1><br><br>
+<div class = "QC-main-text">
+<p1 class = "qp-text-box2">On the quest to learning more about the universe and improving humanity through scientific knowledge, I'll be accumulating notes and research on quantum computing here. I'll try to cover an ongoing knowledge base of quantum development, a history of what has already transpired to lead us to the exciting times in scientific discovery we have now, as well as the trials of quantum computing we have ahead.</p1><br><br>
+<p1 class = "qp-text-box2">Coming from a computer science background, I will ultimately be interested in programming applications effectively using quantum computation methods to optimize a plethora of issues in our society. </p1>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class = "QC-Main-Sub">
+        <a href = "https://www.notion.so/D-Wave-s-2019-Recap-a1fe36f9d3bc4ee6b2044e51b78e7e32"><span style = "background-color: #fddd3c;"><img src = "https://i.imgur.com/ZEiOKgL.png"  class = "qp-text-box6"><p1 class = "qp-text-box3">D-Wave's 2019 Recap</p1></span></a><br><br>
+        <a href="https://www.notion.so/Menten-AI-6efaacbaea83459fafe1254649b82b1f"><span style = "background-color: #fddd3c;"><img src = "https://i.imgur.com/hOb3rV0.png" class = "qp-text-box6"><p1 class = "qp-text-box4">Menten AI</p1></span></a><br><br>
+            <a href="https://www.notion.so/Interesting-Concepts-55d4dadbe27b44ac8566267204a32bf3"><span style = "background-color: #fddd3c;"><img src = "https://i.imgur.com/BXFgGcc.png" class = "qp-text-box6"><p1 class = "qp-text-box5">Interesting Concepts</p1></span></a>
+    </div>
+</div>
+<div style = "background-color: white;
+background-position: center;
+background-repeat: no-repeat;
+display: table-column-group;
+object-position: center;
+text-align: center;
+margin: auto;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+top: -1650px;  
+position: relative;
+height: auto;
+width: 100%;">
+<br><br>
+<br><br>
+<p1 style = "font-size: 80px; color: white; font-weight: 600; background-color: black; border-radius: 45px; border-color: black; border-width: 1px; border-style: solid;">What is Quantum Computing?</p1><br><br><br><br>
+<div style ="display: table; object-position: center; margin: auto;">
+<div style = "float: left; padding-left: 360px; padding-top: 30px;">
+<img src ="https://i.imgur.com/D6XQH3L.gif" style = "black; border-radius: 45px; border-color: black; border-width: 1px; border-style: solid;box-shadow: -30px 40px 20px 30px rgba(0,0,0,0.2);"><br><br><br><br><br><br>
+<img src ="https://i.imgur.com/vlyyF14.gif" style = "margin-left: 400px;black; border-radius: 45px; border-color: black; border-width: 1px; border-style: solid;box-shadow: 0 40px 20px 30px rgba(0,0,0,0.2);"><br><br><br><br><br><br>
+<img src ="https://i.imgur.com/s3nbrHb.gif" style = "margin-right:200px;black; border-radius: 45px; border-color: black; border-width: 1px; border-style: solid; box-shadow: 100px 40px 20px 30px rgba(0,0,0,0.2);"></div>
+    
+<div style ="text-align:center; width:700px; height: auto; position: relative; margin:auto; padding-left: 1500px;">
+<p1 id = "whatisqc" class = "qc-text-box">Quantum computing is a deviation from the classical computational techniques we've become accustomed to, otherwise known as binary, or the 1's and 0's your computer reads whenever you type a letter on the screen. When you press a key on your keyboard, an encoded electrical signal is transmitted from the keyboard to your computer's processor; the signal is then decoded into raw 1's and 0's to induce a command, that command is then translated into the material you see on your monitor. Lengthy explanations aside, as you've witnessed previously, Quantum computers are exponentially more powerful than any regular computer you could possibly dream up, this is solely due to the fact that they follow Quantum physics, which essentially means that binary is rendered obsolete by an entirely different playing field's standards. Quantum computers use a little something called qubits.</p1><br><br><br><br>
+<p1 style = "font-size: 50px; color: black; font-weight: 600; background-color: #fddd3c; border-radius: 45px; border-color: black; border-width: 1px; border-style: solid;">What's up with qubits?</p1><br><br><br><br>
+    <span style = "background-color: #fddd3c;"><p1 class = "qc-text-box">Qubits are the bread and butter of quantum computing —being the sole reasoning behind the exponential performance leap generated by this technological pariah because of the physical principal with which they are associated with, known as superposition. Superposition is otherwise known as the conjoined natural states of an object occuring at the same time. Say a cat was falling off a building in a fetal-esque position, but when it lands it goes prone —basically with superposition that cat assumes both of those positions in time at the same instance —thus defying what most normal humans have come to know as real world physics. Since a qubit can be both a one and a zero this results in more calculations being done in a smaller package, as well as less power consumption necessary to switch 1's to 0's and vice versa. All in all, qubits are the quintessential element of quantum physics; although we are still in the infantile stages of quantum computational techniques and application, the race to the future definitely looks promising, but it doesn't come without its hurdles.</p1></span><br><br><p1 class = "qc-text-box"> -Justin C</p1>
+    
+    <br><br><br><br><br><br>
+    <a href = "https://www.youtube.com/watch?v=JhHMJCUmq28"><p1 class="qc-text-box2">kurzgesagt Video on Quantum Computing</p1></a>
+    </div><br><br><br><br>
+
+    </div>
+</div> 
+
+<style>
+.qc-text-box{
+ font-size: 15px; 
+ color: black; 
+ font-weight: 600;   
+    }
+.qc-text-box2{
+font-size: 20px; 
+color: white; 
+font-weight: 600; 
+background-color: black;
+border-radius: 25px;
+border-color: black; 
+border-width: 1px;
+border-style: solid;   
+}
+    
+@media screen and (max-width: 1024px) {
+    .qc-text-box{
+    font-size: 28px; 
+    }  
+    .qc-text-box2{
+font-size: 25px;  
+}
+    }
+@media screen and (max-width: 450px) {
+   .qc-text-box{
+    font-size: 40px; 
+    }
+    .qc-text-box2{
+font-size: 30px; 
+    }
+    </style>
+    
+<div style = "background-color: #fddd3c;
+background-position: center;
+background-repeat: repeat;
+background-image: url('https://i.imgur.com/Idoqc4v.gif');
+text-align: center;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+top: -1650px;  
+object-position: center;
+margin: auto;             
+position: relative;
+height: auto;
+width: 100%;">
+<img src ="https://i.imgur.com/ZXM05xR.jpg" style = "border-color: white;
+border-style: dotted; border-radius: 25px; border-width: 1px">;
+border-width: 1px;">
+</div>
+<div style = "background-color: white;
+background-position: center;
+background-repeat: repeat;
+background-image: url('https://i.imgur.com/Idoqc4v.gif');
+text-align: center;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+top: -1650px;  
+object-fit: contain;
+position: relative;
+height: auto;
+width: 100%;"> 
+<div class = "city-scape"><div class = "city-scape-white_box">
+    <p1 style="font-size: 80px; color: white; font-weight: 500;">The sky is the limit</p1>
+    <br><br><br><br>
+    <p1 style="font-size: 40px; color: #fddd3c; font-weight: 500;"> Quantum computing is predicted to be the next trillion dollar industry, with large stakes in the medical, financial, and scientific fields already in the works. Here we have a computational pariah, an instrument that can lead humanity to new heights, a device that can calculate something that would take a traditional computer until the heat death of the universe to calculate, in mere minutes. Everybody wants a piece of the pie, but is the pie really as sweet as it seems?</p1><br><br>
+    <p1 style="font-size: 40px; color: #fddd3c; font-weight: 500;">Join us on our journey, and we may all find out if quantum truly is the final frontier for humanity.</p1>
+    </div>
+    </div>
+    </div>
+<div style = "background-color: white;
+background-position: center;
+background-repeat: repeat;
+text-align: center;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+top: -1650px;  
+object-position: center; 
+margin: auto;
+position: relative;
+background-image: url('https://i.imgur.com/Idoqc4v.gif');
+height: 900px;
+width: 100%;">
+<div class = "white_box">
+<p1 class = "white_box_text">Thanks for checking us out, and be sure to stay tuned for future updates!</p1>
+</div>
+<br><br><br><br><br><br>
+<img src = "https://i.imgur.com/WGJq8MP.png" class = "QRG_logo_White_box">
+</div>
+<div class="footer">
+<div class="progress-container">
+<div class="progress-bar" id="myBar">
+</div>
+</div>
+<p style="font-size:60%;">Website design by: Justin Cook </p>
+</div>
+    
+<style>
+    .city-scape{
+     background-color: black;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-image: url('https://i.imgur.com/S5tcLr6.gif');
+     text-align: center;
+     top: 0;  
+     border-color: white;
+     border-style: dotted; 
+     border-radius: 25px; 
+     border-width: 1px;
+     margin: auto;
+     object-fit: cover;
+     position: relative;
+     height: 1342px;
+     width: 2200px;   
+     overflow: hidden;
+    }
+    
+    .city-scape-white_box{
+    padding: 100px;
+    background-color: transparent;
+    background: rgba(145, 145, 145, 0.8);
+    background-position: center;
+    text-align: center;
+    border-color: #fddd3c;
+    border-style: solid;
+    border-width: 3px;
+    top: 100px;  
+    object-position: center;
+    margin: auto;             
+    position: relative;
+    height: auto;
+    width: 1100px;
+    }
+    
+    .white_box{
+    padding: 100px;
+    background-color: white;
+    background-position: center;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    top: 100px;  
+    object-position: center;
+    margin: auto;             
+    position: relative;
+    height: 200px;
+    width: 600px;
+    }
+    
+    .white_box_text{
+     font-size: 50px; 
+     color: black; 
+     font-weight: 300;
+    }
+    
+    .QRG_logo_White_box{
+     height: 100px;
+     width: auto;
+    }
+    
+</style>
+    
+
+<!-- top navigation bar config, links, classes, naming schemes, &divs --> 
+<div class="navbar">
+<a href="https://quantumgame.io/""#QRG_LOGO" class="active"><img src="https://i.imgur.com/WGJq8MP.png" alt="QRG Logo" class = "QRG_Logo" title = "Click for a surprise"></a>
+<a onClick="location.href='#whatisqc'""#about"><p1 class = "top-navi-text" title = "Just cut to the chase">About</p1></a>
+<a onClick="location.href='#contact_section'" href="mailto:jcook03266@gmail.com""#contact" title = "Shoot us an Email"><p1 class = "top-navi-text">Contact Us</p1></a>
+<a href="https://www.nyit.edu/""#NYIT" ><p1 class = "top-navi-text" title = "School Pride!">NYIT</p1></a>
+    <a href="https://www.ibm.com/quantum-computing/"><p1 class = "top-navi-text" title = "The second top dog in Quantum Computing">IBM</p1></a>
+<a href="https://www.dwavesys.com/"><p1 class = "top-navi-text" title = "The first top dog in Quantum Computing">D-Wave</p1></a>
+<a href="https://research.google/teams/applied-science/quantum/"><p1 class = "top-navi-text" title = "Google's take on the Quantum leap">Google</p1></a>
+<a href="https://www.microsoft.com/en-us/quantum"><p1 class = "top-navi-text" title = "Microsoft's take on the Quantum leap">Microsoft</p1></a>
+<a href="https://www.intel.com/content/www/us/en/research/quantum-computing.html"><p1 class = "top-navi-text" title = "Intel's take on the Quantum leap">Intel</p1></a>
+    <a href="https://www.w3schools.com/html/default.asp""#Learn how to program"><p1 class = "top-navi-text" title = "Use W3 Schools' amazing content to get ahead of the competition">Learn how to program</p1></a>
+<span style="font-size:15px;cursor:pointer" onclick="decide()"><img src="https://i.imgur.com/bqn2DQc.png" id="arrowhead" class = "arrow_boi" title = "Menu"></span>
+</div>
+<!-- refer to CSS for changing color of bars etc etc -->
+
+<!-- bottom nav bar -->
+<div class="navbar2">
+<a href="https://i.imgur.com/thcMW0S.gif""#GitHub"><img src="https://i.imgur.com/anSVIqP.png" title="Look to the future through our GitHub" class = "navbar2_icons"></a>
+<a href="https://discord.gg/GZCaxm""#Discord"><img src="https://i.imgur.com/5E6bKdb.png" title="Join the talk over on our Discord server" class = "navbar2_icons"></a>
+<a href="https://instagram.com/theqrg?igshid=tjqyqr0xz583""#Instagram"><img src="https://i.imgur.com/zWrBet4.png" title="Follow our Instagram!" class = "navbar2_icons"></a>
+<a href="https://i.imgur.com/thcMW0S.gif""#Twitter"><img src="https://i.imgur.com/Bav3CpK.png" title="See the hottest news on our Twitter" class = "navbar2_icons"></a>
+</div>
+<!-- side nav bar for IBM links etc -->
+
+<div id="navbar3" class="navbar3">
+<div class = "navbar3_container">
+<div class = sidediv_1_header>
+<p1 style="font-size:50px; color: white;"> Queen's Collection </p1>
+</div>
+<div class = sidediv_1_header_layer></div>
+<div class = sidediv_1>
+<p2 style="font-size:15px; font-weight: 800;"> Run around with Queen as our beloved corgie attempts to gather quantum data using the best machine learning it can given the times! </p2>
+</div>
+<div class = "sidediv_2">
+<p2 style="font-size:30px; font-weight: 500;"> Youtube selection of the day: </p2>
+    <div class = "vid-wrapper">
+        <a href="https://www.youtube-nocookie.com/embed/-ZNEzzDcllU" target="_blank" id= "myiFramelink" style = "text-decoration: none;
+	color: inherit;"><img id = "myiFrame" style = "transition: 1s; border-radius: 25px;" width="560" height="100%" src="https://img.youtube.com/vi/-ZNEzzDcllU/0.jpg";><i class="play-btn fa fa-youtube-play fa-3x" aria-hidden="true"></i></a></div>
+<iframe class = "videoframes" id = "myiFrame1" style = "transition: 1s; border-radius: 25px;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-ZNEzzDcllU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "videoframes" id = "myiFrame2" style = "transition: 1s; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/v-_GQBszZYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "videoframes" id = "myiFrame3" style = "transition: 1s; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/QuR969uMICM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "videoframes" id = "myiFrame4" style = "transition: 1s; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/yy6TV9Dntlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "videoframes" id = "myiFrame5" style = "transition: 1s; border-radius: 25px;" width="560" height="315" src="https://www.youtube.com/embed/60OkanvToFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="widgetmain" class="rssfeed"; style="text-align:left;overflow-y:auto;overflow-x:hidden; height: 1200px; width:560px; background-color:black; border-radius: 25px; border:1px dotted black;"><div id="rsswidget" style="height:100%;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1591224581347&amp;x=http%3A%2F%2Fnews.mit.edu%2Frss%2Ftopic%2Fquantum-computing&amp;w=200&amp;h=500&amp;bc=FFFFFF&amp;bw=4&amp;bgc=FFFFFF&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=000000&amp;ts=18&amp;tb=transparent&amp;il=true&amp;lc=000000&amp;ls=14&amp;lb=true&amp;id=true&amp;dc=000000&amp;ds=14&amp;idt=true&amp;dtc=000000&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:560px; height:100%;" id="rssOutput" class = "rssfeed";>Reading RSS Feed ...</iframe></div></div>
+</div>
+<div class = "sidediv_border_out">
+</div>
+<div class = "sidediv_border_in">
+</div>
+<div class = "sidediv_border_in_2">
+</div>
+<div class = "sidediv_border_exitbutton" onclick="decide();"></div>
+    </div>
+</div>
+    
+<div class = "report_a_bug">
+<button onClick="location.href='mailto:jcook03266@gmail.com'" style = "background-color: transparent;"><img src="https://i.imgur.com/kKmE9tz.png" class= "bug_boi"></button>
+</div>
+<style>
+.report_a_bug{
+height:auto;
+width:auto;
+text-align:auto;
+display: block;
+background-color: transparent;
+bottom: 0;
+z-index: 99999;
+position: fixed;
+margin-left: -130px;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 3s;
+}
+
+img.bug_boi{
+height: 200px; 
+background-color: transparent; 
+color:transparent;            
+}
+
+    
+@media screen and (max-width: 1024px){
+img.bug_boi{
+height: 400px;            
+}
+.report_a_bug{
+height:auto;
+width:auto;
+text-align:auto;
+display: block;
+background-color: transparent;
+bottom: 0;
+z-index: 99999;
+position: fixed;
+margin-left: -200px;
+opacity: 0;
+animation: fade-in-right ease 2s forwards;
+animation-delay: 3s;
+}
+}
+   
+.vid-wrapper {
+	display: inline-block;
+	position: relative;
+}
+
+.play-btn {
+	color: rgba(0, 0, 0, 0.8);
+	position: absolute;
+    font-size: 56px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#myiFramelink:hover .play-btn{
+	color: #e62117;
+    
+}
+</style>
+
+<script>
+var u = 0;
+
+setInterval(function(){
+var myUrlArray = new Array("https://www.youtube-nocookie.com/embed/-ZNEzzDcllU","https://www.youtube.com/embed/v-_GQBszZYg","https://www.youtube.com/embed/QuR969uMICM","https://www.youtube.com/embed/yy6TV9Dntlw","https://www.youtube.com/embed/60OkanvToFI","https://www.youtube.com/embed/8W32z8Xq-dA","https://www.youtube.com/embed/VGKNWTOPsr4","https://www.youtube.com/embed/f0gMdGrVteI","https://www.youtube.com/embed/JhHMJCUmq28","https://www.youtube.com/embed/zOGNoDO7mcU","https://www.youtube.com/embed/Fxv3JoS1uY8","https://www.youtube.com/embed/GdqbLmdKgw4");
+document.getElementById('myiFrame').setAttribute('src',myUrlArray[u]);
+    
+if(u < myUrlArray.length-1){
+u++;
+}else{
+u = 0;
+}
+var url = myUrlArray[u];
+
+// Function to extract video id 	
+function extractVidId(url) {
+var link = url;
+var ref = link.split('/');
+var vRef = ref[ref.length-1].split('&');
+vRef = vRef[0].split('=');
+if(vRef.length > 1) {
+vRef = vRef[1];
+} else {
+vRef = vRef[0];
+}
+return vRef;
+}
+
+// Extracting video id fro url
+var videoId = extractVidId(url);
+
+// Checking if url is valid
+if(videoId != null) {
+ // Link to youtube video
+var vidLink = 'https://www.youtube.com/watch?v=' + videoId;
+			
+// Link to video image
+var vidImage = 'https://img.youtube.com/vi/' + videoId + '/0.jpg';
+	
+// Set href to the vidLink
+document.getElementById("myiFramelink").setAttribute("href", vidLink);
+	
+// Set img src to vidImage
+document.getElementById("myiFrame").setAttribute("src", vidImage);
+} else { 
+console.log("The youtube url is not valid.");
+}   
+},10000);  
+    
+
+function play() {
+var audio = document.getElementById("audio");
+audio.play();
+}
+
+function openNav() {
+document.getElementById("navbar3").style.width = '610px';
+document.getElementById("arrowhead").style.transform = 'rotate(-90deg)';
+
+document.getElementById("click_meh").style.display = "none";
+}
+
+function decide(){
+localStorage.clicks += 1 ;
+if(localStorage.clicks == 1){
+openNav();
+localStorage.clicks += 1;
+}
+else{
+closeNav();
+localStorage.clicks = 0;
+}
+}
+
+function closeNav() {
+document.getElementById("navbar3").style.width = "0";
+document.getElementById("arrowhead").style.transform = 'rotate(360deg)';
+}
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var scrolled = (winScroll / height) * 100;
+document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+<audio id = "audio">
+<source src="https://hostjjc.imfast.io/dog_bark_JC.mp3" type="audio/mp3">
+</audio>
+</body>
+</html>
